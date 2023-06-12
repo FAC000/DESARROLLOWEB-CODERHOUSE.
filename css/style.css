@@ -20,64 +20,22 @@ body {
     background-color: #2f3e4684;
 }
 
-/* NAV BAR */
+/* NAV */
 
-nav {
-   background-color:  #c3d4c7;
-    font-size: 20px;
-    font-family: oswald;
-    position: fixed;
-    width: 100%;
-    padding: 50px;
+
+
+.navbar-brand {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 50px;
+    color: #84A98C;
 }
 
-nav a,
-ul,
-li {
-    display: inline;
-    position: relative;
-    text-decoration: none;
-    color: #354f52;
-    margin: 20px;
+.nav-link {
+    color: #52796F;
+
 }
 
-nav a:after {
-    content: "";
-    position: absolute;
-    background: linear-gradient(#84A98C, #84A98C, #84A98C);
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: -10px;
-    transition: 1s;
-}
-
-nav a:hover:after {
-    width: 100%;
-}
-
-/* MEDIA QUERY NAV */
-
-@media screen and (max-width: 1500px) {
-
-    nav a,
-    ul,
-    li {
-        display: inline-block;
-        margin: 10px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-
-    nav a,
-    ul,
-    li {
-        display: block;
-        margin: 20px;
-        font-size: 15px;
-    }
-}
 
 
 /* REDES */
@@ -142,12 +100,12 @@ nav a:hover:after {
 }
 
 .arriba i:hover {
-   
+
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.arriba p{
+.arriba p {
     margin-top: 10px;
     font-size: 15px;
     color: #c3d4c7;
@@ -160,7 +118,7 @@ nav a:hover:after {
 }
 
 .arribauno i:hover {
-   
+
     transform: scale(1.1);
     transition: 0.5s;
 }
@@ -250,29 +208,10 @@ h2 {
 
 /* INDEX MEDIA QUARY */
 
-@media screen and (max-width: 1165px) {
 
-    .inicio {
-        margin-top: 200px;
-    }
-
-}
 
 @media screen and (max-width: 650px) {
-    nav {
-        position: static;
-    }
-
-    .main {
-        width: 300px;
-        font-size: 15px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-
+   
     .arriba {
         margin-top: 30px;
         visibility: visible;
@@ -285,9 +224,9 @@ h2 {
     }
 
     .arriba p {
-        
+
         margin-top: 10px;
-        
+
     }
 
 }
@@ -322,14 +261,14 @@ h2 {
 
 .nosotros_uno {
     grid-area: nosotros;
-    margin-top: 100px;
+    
 }
 
 .nosotros_texto {
     color: #c3d4c7;
     width: 50%;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     letter-spacing: 5px;
     line-height: 20px;
 }
@@ -339,8 +278,8 @@ h2 {
 }
 
 .imagen_nosotros img {
-    width: 50%;
-    margin-top: 350px;
+    width: 80%;
+    margin-top: 200px;
 }
 
 .promociones {
@@ -368,21 +307,13 @@ h2 {
 
 /* SOBRE NOSOTROS MEDIA QUARY */
 
-@media screen and (max-width:1440px) {
 
-    .imagen_nosotros img {
-
-        margin-top: 400px;
-    }
-
-}
 
 @media screen and (max-width:1024px) {
 
     .imagen_nosotros img {
-
-        margin-top: 700px;
-        width: 80%;
+        margin-top: 400px;
+        width: 100%;
     }
 
     .promociones {
@@ -441,7 +372,7 @@ h2 {
 .titulo {
     font-family: oswald;
     color: #c3d4c7;
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: 35px;
     margin-bottom: 40px;
 }
@@ -475,7 +406,6 @@ iframe {
 @media screen and (max-width: 1120px) {
 
     .ubicacion {
-        margin-top: 400px;
         width: 100%;
     }
 
@@ -492,17 +422,13 @@ iframe {
         margin-top: 10px;
     }
 
-    .titulo {
-        margin-top: 400px;
-    }
+    
 
 }
 
 @media screen and (max-width: 650px) {
 
-    .titulo {
-        margin-top: 200px;
-    }
+    
 
     .titulo {
         font-size: 30px;
@@ -521,7 +447,7 @@ iframe {
     font-family: oswald;
     font-size: 35px;
     color: #c3d4c7;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .cartel {
@@ -669,6 +595,7 @@ iframe {
 /* ENTRADAS */
 
 .titulotres {
+    margin-top: 100px;
     font-family: oswald;
     font-size: 35px;
     color: #c3d4c7;
@@ -690,7 +617,7 @@ table {
     background-image: url(https://img.freepik.com/vector-gratis/badajo-fondo-pelicula-carrete-pelicula-cine_1017-26096.jpg);
     background-attachment: fixed;
     background-size: cover;
-   
+
 }
 
 th {
@@ -731,26 +658,14 @@ td {
 
 /* ENTRADAS MEDIA QUARY */
 
-@media screen and (max-width: 1120px) {
 
-    .titulotres {
-        margin-top: 400px;
+@media screen and (max-width: 1500px) {
+
+    th {
+        font-size: 25px;
     }
-}
 
-@media screen and (max-width: 670px) {
-
-    .titulotres {
-        margin-top: 400px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-
-    .titulotres {
-        margin-top: 200px;
-        font-size: 30px;
-    }
+   
 }
 
 @media screen and (max-width: 500px) {
@@ -781,7 +696,7 @@ td {
     padding-left: 200px;
     padding-right: 200px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 100px;
     background-image: url(https://w0.peakpx.com/wallpaper/567/583/HD-wallpaper-joker-movie-joaquin-phoenix-arthur-fleck.jpg);
     background-size: cover;
     border-radius: 10px;
@@ -844,7 +759,7 @@ td {
     background-image: url(https://static.basicinvite.com/media/bi/34806/japanese-kerria-wallpaper-l-dark-green.jpg?q=1683903378);
     background-size: cover;
     width: 450px;
-    height: 700px;
+    height: 750px;
     padding: 10px 20px;
     font-size: 25px;
     display: flex;
